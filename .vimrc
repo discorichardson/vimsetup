@@ -46,7 +46,7 @@ if has("gui_running")
 		" Set Font
 		set gfn=Source_Code_Pro:h9:cANSI
 		" Maximise window
-		"au GUIEnter * simalt ~x
+		au GUIEnter * simalt ~x
 	endif
 else
 	" Terminal specific features
@@ -115,9 +115,7 @@ set nobackup
 set nowritebackup
 
 " Set to auto read when a file is changed from the outside
-" Don't like this as it does it without saying anything
-" Might want it when editing in VIM and an IDE
-"set autoread
+set autoread
 
 " Add default indentation
 set autoindent
@@ -196,7 +194,7 @@ nnoremap <leader>ch :cd ~<CR>:pwd<CR>
 " generate CTags. still have to press enter, hopefully I'll think before running it that way
 "nnoremap <leader>ct :!ctags -R --exclude=.git
 
-" Delete current buffer (Also closes tab if that's the only window)
+" Delete current buffer and close window
 nnoremap <leader>d :bdelete<CR>
 
 " Clear search Highlight
@@ -220,10 +218,16 @@ nnoremap <leader>pd :w<CR>:cd %:p:h<CR>:!pandoc % -o %:r.docx<CR><CR>
 " Quit
 nnoremap <leader>q :q<CR>
 
+" Session Make
+nnoremap <leader>sm :mksession! ~/session.vim<CR>
+" Search and Replace
+nnoremap <leader>sr :%s:::g<Left><Left><Left>
+" Session Source
+nnoremap <leader>ss :source ~/session.vim<CR>
+" Wanted to bring up a list of saved sessions but does not work
+"nnoremap <leader>ss :source ~/*.vim<Tab>
 " Search TODO and FIXME lines
 nnoremap <leader>st /TODO\\|FIXME<CR>
-" Search and replace
-nnoremap <leader>sr :%s:::g<Left><Left><Left>
 
 " Toggle Autoread
 nnoremap <leader>ta :set autoread!<CR>:set autoread?<CR>
