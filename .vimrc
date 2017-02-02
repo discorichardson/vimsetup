@@ -15,7 +15,7 @@ syntax enable
 
 autocmd BufRead,BufNewFile *.csp set filetype=javascript
 autocmd BufRead,BufNewFile *.bas set filetype=vb
-autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.md,*.txt set filetype=markdown
 
 " Code folding
 set foldmethod=indent
@@ -208,8 +208,7 @@ nnoremap <leader>nb :enew<CR>
 " New Tab
 nnoremap <leader>nt :tabnew<CR>
 
-" These could be in a filetype plugin, but I'd still need to note them here so
-" I don't re-use the shortcut!
+" These fail if filename has a space in it
 " Pandoc Html
 nnoremap <leader>ph :w<CR>:cd %:p:h<CR>:!pandoc % -s -o %:r.html<CR><CR>
 " Pandoc Docx
