@@ -141,16 +141,9 @@ set lazyredraw
 " set spelling language
 set spelllang=en_gb
 
-" Make it easier to use vim PROPERLY!
-"nnoremap <up> <nop>
-"nnoremap <down> <nop>
-"nnoremap <left> <nop>
-"nnoremap <right> <nop>
-"
-"inoremap <up> <nop>
-"inoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
+" Use arrow keys to go through screen lines
+nnoremap <up> gk
+nnoremap <down> gj
 
 " Better navigation between windows
 nnoremap <C-h> <C-w>h
