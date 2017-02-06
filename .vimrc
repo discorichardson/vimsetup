@@ -198,9 +198,9 @@ if has("win32")
 endif
 if has("unix")
 	" Grep Recursively (case insensitive) on unix
-	nnoremap <leader>gr :grep /R /i  *<Left><Left>
+	nnoremap <leader>gr :grep -rI  *<Left><Left>
 	" Grep current folder (case insensitive) on unix
-	nnoremap <leader>g. :grep /i  *<Left><Left>
+	nnoremap <leader>g. :grep -i  *<Left><Left>
 endif
 
 " Clear search Highlight
