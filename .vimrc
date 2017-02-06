@@ -190,6 +190,14 @@ nnoremap <leader>ch :cd ~<CR>:pwd<CR>
 " Delete current buffer and close window
 nnoremap <leader>d :bdelete<CR>
 
+if has("win32")
+	" Grep Recursively (case insensitive) on windows
+	nnoremap <leader>gr :grep /S /I  *.*<Left><Left><Left><Left>
+	" Grep current folder (case insensitive) on windows
+	nnoremap <leader>g. :grep /I  *.*<Left><Left><Left><Left>
+endif
+" TODO same shortcut ro work on Linux
+
 " Clear search Highlight
 nnoremap <leader>h :nohlsearch<CR>
 
