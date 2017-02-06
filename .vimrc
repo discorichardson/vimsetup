@@ -196,7 +196,12 @@ if has("win32")
 	" Grep current folder (case insensitive) on windows
 	nnoremap <leader>g. :grep /I  *.*<Left><Left><Left><Left>
 endif
-" TODO same shortcut ro work on Linux
+if has("unix")
+	" Grep Recursively (case insensitive) on unix
+	nnoremap <leader>gr :grep /R /i  *<Left><Left>
+	" Grep current folder (case insensitive) on unix
+	nnoremap <leader>g. :grep /i  *<Left><Left>
+endif
 
 " Clear search Highlight
 nnoremap <leader>h :nohlsearch<CR>
