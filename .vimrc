@@ -206,6 +206,8 @@ endif
 " Clear search Highlight
 nnoremap <leader>h :nohlsearch<CR>
 
+" Reminder that <leader>ig toggles indent guides
+
 " list Marks
 nnoremap <leader>m :marks<CR>
 
@@ -248,6 +250,8 @@ nnoremap <leader>tn :set relativenumber!<CR>:set relativenumber?<CR>
 nnoremap <leader>tp :set paste!<CR>:set paste?<CR>
 " Toggle Spelling
 nnoremap <leader>ts :set spell!<CR>:set spell?<CR>
+" Toggle Tagbar
+nnoremap <leader>tt :TagbarToggle<CR>
 " Toggle Wrap
 nnoremap <leader>tw :set wrap!<CR>:set wrap?<CR>
 
@@ -269,3 +273,4 @@ nnoremap <leader>. :tabnext<CR>
 
 " Toggle folds
 nnoremap <leader><Space> za
+

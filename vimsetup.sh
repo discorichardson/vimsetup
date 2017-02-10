@@ -24,3 +24,5 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/tpope/vim-repeat.git ~/.vim/bundle/vim-repeat
 git clone https://github.com/kshenoy/vim-signature.git ~/.vim/bundle/vim-signature
 git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
+git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
+git clone https://github.com/dietsche/vim-lastplace.git ~/.vim/bundle/vim-lastplace

@@ -31,3 +31,7 @@ cd ~/.vim/bundle/vim-signature
 git pull
 cd ~/.vim/bundle/vim-surround
 git pull
+cd ~/.vim/bundle/tagbar
+git pull
+cd ~/.vim/bundle/vim-lastplace
+git pull
