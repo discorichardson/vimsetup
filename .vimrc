@@ -221,6 +221,8 @@ nnoremap <leader>nt :tabnew<CR>
 nnoremap <leader>ph :w<CR>:cd %:p:h<CR>:!pandoc % -s -o %:r.html<CR><CR>
 " Pandoc Docx
 nnoremap <leader>pd :w<CR>:cd %:p:h<CR>:!pandoc % -o %:r.docx<CR><CR>
+" Pandoc odT
+nnoremap <leader>pt :w<CR>:cd %:p:h<CR>:!pandoc % -o %:r.odt<CR><CR>
 
 " Quit
 nnoremap <leader>q :q<CR>
@@ -273,4 +275,3 @@ nnoremap <leader>. :tabnext<CR>
 
 " Toggle folds
 nnoremap <leader><Space> za
-
