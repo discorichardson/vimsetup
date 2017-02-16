@@ -141,6 +141,10 @@ set lazyredraw
 " set spelling language
 set spelllang=en_gb
 
+" remove ` from list of auto complete chars, Mainly for benefit of mark down
+" which is about the only place I've seen it used!
+let g:AutoClosePairs_del = "`"
+
 " Use arrow keys to go through screen lines
 nnoremap <up> gk
 nnoremap <down> gj
