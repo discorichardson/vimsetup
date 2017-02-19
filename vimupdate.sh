@@ -35,3 +35,5 @@ cd ~/.vim/bundle/tagbar
 git pull
 cd ~/.vim/bundle/vim-lastplace
 git pull
+cd ~/.vim/bundle/vim-sensible
+git pull

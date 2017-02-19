@@ -26,3 +26,4 @@ git clone https://github.com/kshenoy/vim-signature.git ~/.vim/bundle/vim-signatu
 git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
 git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
 git clone https://github.com/dietsche/vim-lastplace.git ~/.vim/bundle/vim-lastplace
+git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
