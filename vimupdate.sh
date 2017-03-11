@@ -37,3 +37,5 @@ cd ~/.vim/bundle/vim-lastplace
 git pull
 cd ~/.vim/bundle/vim-sensible
 git pull
+cd ~/.vim/bundle/vim-obsession
+git pull

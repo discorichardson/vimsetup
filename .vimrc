@@ -27,9 +27,9 @@ set encoding=utf-8
 if has("gui_running")
 	" GVIM specific changes
 	" Colour Scheme
-	colorscheme solarized
-	let g:solarized_contrast="high"
-	let g:solarized_visibility="high"
+	"colorscheme solarized
+	"let g:solarized_contrast="high"
+	"let g:solarized_visibility="high"
 
 	" No toolbar
 	set guioptions-=T
@@ -46,12 +46,20 @@ if has("gui_running")
 		" Set Font
 		set gfn=Source_Code_Pro:h9:cANSI
 		" Maximise window
-		au GUIEnter * simalt ~x
+		"au GUIEnter * simalt ~x
+		" Better yet allow me to maximise the window if I want
+		" Only works if menu is visible though :(
+		"set guioptions+=m
+		"set winaltkeys=yes
 	endif
 else
 	" Terminal specific features
-	colorscheme blue
+	"colorscheme blue
 endif
+
+colorscheme solarized
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 
 " I always pick a dark colour scheme and have a dark terminal
 set background=dark
@@ -126,8 +134,8 @@ set noexpandtab
 set smarttab
 
 " Show white space
-set listchars=eol:#,tab:>\ ,trail:~
-"set showbreak=\\\ 
+" set listchars=eol:#,tab:>\ ,trail:~
+set showbreak=\\\ 
 set nolist
 
 " Don't redraw while executing macros (good performance config)
@@ -193,6 +201,7 @@ nnoremap <leader>ch :cd ~<CR>:pwd<CR>
 
 " Delete current buffer and close window
 nnoremap <leader>d :bdelete<CR>
+nnoremap <leader>D :bdelete!
 
 if has("win32")
 	" Grep Recursively (case insensitive) on windows
@@ -230,15 +239,10 @@ nnoremap <leader>pt :w<CR>:cd %:p:h<CR>:!pandoc % -o %:r.odt<CR><CR>
 
 " Quit
 nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :q!
 
-" Session Make
-nnoremap <leader>sm :mksession! ~/session.vim<CR>
 " Search and Replace
 nnoremap <leader>sr :%s:::g<Left><Left><Left>
-" Session Source
-nnoremap <leader>ss :source ~/session.vim<CR>
-" Wanted to bring up a list of saved sessions but does not work
-"nnoremap <leader>ss :source ~/*.vim<Tab>
 " Search TODO and FIXME lines
 nnoremap <leader>st /TODO\\|FIXME<CR>
 
@@ -279,3 +283,24 @@ nnoremap <leader>. :tabnext<CR>
 
 " Toggle folds
 nnoremap <leader><Space> za
+
+" Alt Remaps in insert mode - I'll be interested to see if I actually use these.
+" hjkl
+"inoremap <A-h> <Esc>i
+inoremap <A-h> <C-o>h
+inoremap <A-j> <C-o>j
+inoremap <A-k> <C-o>k
+inoremap <A-l> <C-o>a
+" end
+inoremap <A-e> <C-o>e<C-o>a
+inoremap <A-E> <C-o>E<C-o>a
+" word
+inoremap <A-w> <C-o>w
+inoremap <A-W> <C-o>W
+" back a word
+inoremap <A-b> <C-o>b
+inoremap <A-B> <C-o>B
+" start of line
+inoremap <A-i> <C-o>I
+" end of line
+inoremap <A-a> <C-o>A
