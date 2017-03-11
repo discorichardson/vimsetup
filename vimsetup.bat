@@ -28,3 +28,4 @@ git clone https://github.com/tpope/vim-surround.git "%USERPROFILE%\vimfiles\bund
 git clone https://github.com/majutsushi/tagbar.git "%USERPROFILE%\vimfiles\bundle\tagbar"
 git clone https://github.com/dietsche/vim-lastplace.git "%USERPROFILE%\vimfiles\bundle\vim-lastplace"
 git clone https://github.com/tpope/vim-sensible.git "%USERPROFILE%\vimfiles\bundle\vim-sensible"
+git clone https://github.com/tpope/vim-obsession.git "%USERPROFILE%\vimfiles\bundle\vim-obsession"
