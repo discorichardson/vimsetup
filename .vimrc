@@ -15,7 +15,7 @@ syntax enable
 
 autocmd BufRead,BufNewFile *.csp set filetype=javascript
 autocmd BufRead,BufNewFile *.bas set filetype=vb
-autocmd BufRead,BufNewFile *.md,*.txt set filetype=markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 " Code folding
 set foldmethod=indent
@@ -272,6 +272,7 @@ nnoremap <leader>vs :w<CR>:so $MYVIMRC<CR>
 
 " Write file
 nnoremap <leader>w :w<CR>
+nnoremap <leader>wq :wq<CR>
 
 " eXplore
 "nnoremap <leader>x :Explore<CR>
