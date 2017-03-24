@@ -60,6 +60,8 @@ endif
 colorscheme solarized
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
+"colorscheme papercolor
+"let g:airline_theme='papercolor'
 
 " I always pick a dark colour scheme and have a dark terminal
 set background=dark
@@ -220,6 +222,12 @@ endif
 nnoremap <leader>h :nohlsearch<CR>
 
 " Reminder that <leader>ig toggles indent guides
+
+" Move line Down / Move line Up - up behaves badly on edge cases
+" I bet there's better ways of doing this, seems like an obvious shortcut though
+" I bet there's a way to do it on a visually selected bunch of lines as well
+nnoremap <leader>j ddp
+nnoremap <leader>k ddkP
 
 " list Marks
 nnoremap <leader>m :marks<CR>
