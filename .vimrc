@@ -27,9 +27,9 @@ set encoding=utf-8
 if has("gui_running")
 	" GVIM specific changes
 	" Colour Scheme
-	"colorscheme solarized
-	"let g:solarized_contrast="high"
-	"let g:solarized_visibility="high"
+	colorscheme solarized
+	let g:solarized_contrast="high"
+	let g:solarized_visibility="high"
 
 	" No toolbar
 	set guioptions-=T
@@ -56,12 +56,6 @@ else
 	" Terminal specific features
 	"colorscheme blue
 endif
-
-colorscheme solarized
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-"colorscheme papercolor
-"let g:airline_theme='papercolor'
 
 " I always pick a dark colour scheme and have a dark terminal
 set background=dark
